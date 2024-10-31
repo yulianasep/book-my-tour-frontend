@@ -1,0 +1,269 @@
+.mainContainer {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.mainImage {
+    position: relative;
+    width: 65%;
+    height: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainImage img{
+    width: 90%;
+    height: 76%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.littleCard {
+    box-sizing: border-box;
+    padding: 20px 21px 21px 21px;
+    position: absolute;
+    bottom: 260px;
+    right: 100px;
+    width: 280px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+}
+
+.littleCard h3 {
+    margin: 0px;
+    color: #464646;
+    font-weight: bolder;
+    font-size: 1.625rem;
+}
+
+.littleCard p {
+    color: #464646;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.littleCard button {
+    background-color: #04ADBF;
+    height: 48px;
+    width: 165px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    color: #464646;
+}
+
+.tourContainer {
+    width: 40%;
+    height: 100%;
+}
+
+.tourInfo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 15px;
+}
+
+.tourInfo img {
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.tourInfo h4, .tourInfo h5 {
+    margin: 0px;
+}
+
+.tourInfo h4{
+    color: #464646;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width: 50%;
+}
+
+.tourInfo h5{
+    color: #04ADBF;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 50%;
+}
+
+.tourInfo span{
+    color: #A1A7B0;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 50%;
+}
+
+.tourInfo p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #464646;
+}
+
+.btnRegresar {
+    width: 116px;
+    height: 32px;
+    border: none;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 20px;
+    color: #464646;
+}
+
+.btnRegresar img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.carouselImage {
+    width: 100%;
+    cursor: zoom-in; 
+}
+  
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out; 
+    z-index: 1000;
+}
+  
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+@media (max-width: 1700px) {
+    .mainImage {
+        height: 93%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .mainImage, .mainImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .littleCard {
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .tourContainer {
+        width: 100%;
+        display: flex;
+        height: 400px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    #description {
+        padding: 0px 25px;
+    }
+
+    #description, .tourInfo {
+        width: 50%;
+    }
+
+    #description p {
+        margin: 0px;
+    }
+
+    .mainContainer {
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {  
+    #description {
+        padding: 0px 5px;
+    }
+}
+
+@media (max-width: 700px) {  
+    .tourContainer {
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+
+    .tourInfo, #description {
+        width: 80%;
+    }
+
+    .mainImage img {
+        height: 500px;
+    }
+
+    .littleCard{
+        bottom: 30px;
+        right: 27%;
+    }
+}
+
+@media (max-width: 600px) {  
+    .littleCard{
+        bottom: 30px;
+        right: 17%;
+    }
+}
+
+
+@media (max-width: 430px) {  
+    .littleCard{
+        right: 10%;
+    }
+}
+
+@media (min-height: 1000px) {  
+    .mainImage {
+        height: 68%;
+    }
+}
